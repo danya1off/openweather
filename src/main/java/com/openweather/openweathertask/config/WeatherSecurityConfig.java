@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WeatherSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private AuthEntryPoint authEntryPoint;
+    private final AuthEntryPoint authEntryPoint;
 
     public WeatherSecurityConfig(AuthEntryPoint authEntryPoint) {
         this.authEntryPoint = authEntryPoint;
